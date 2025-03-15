@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             VStack{
-                TagView(alignment: .center, spacing: 0){
+                FlowLayout(alignment: .center, spacing: 0){
                     ForEach($tags) { $tag in
                         Text(tag.name)
                             .font(.headline)
